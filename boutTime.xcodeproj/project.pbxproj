@@ -14,8 +14,8 @@
 		891385D61F649C0C00A92E76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 891385D41F649C0C00A92E76 /* LaunchScreen.storyboard */; };
 		891385E11F649C0C00A92E76 /* boutTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891385E01F649C0C00A92E76 /* boutTimeTests.swift */; };
 		891385EC1F649C0C00A92E76 /* boutTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891385EB1F649C0C00A92E76 /* boutTimeUITests.swift */; };
-		891385FA1F656D5600A92E76 /* HistoricEvents.plist in Resources */ = {isa = PBXBuildFile; fileRef = 891385F91F656D5600A92E76 /* HistoricEvents.plist */; };
 		891385FC1F6576FC00A92E76 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891385FB1F6576FC00A92E76 /* Timeline.swift */; };
+		891385FE1F65B17400A92E76 /* HicstoricEvents.plist in Resources */ = {isa = PBXBuildFile; fileRef = 891385FD1F65B17400A92E76 /* HicstoricEvents.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +49,8 @@
 		891385E71F649C0C00A92E76 /* boutTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = boutTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		891385EB1F649C0C00A92E76 /* boutTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boutTimeUITests.swift; sourceTree = "<group>"; };
 		891385ED1F649C0C00A92E76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		891385F91F656D5600A92E76 /* HistoricEvents.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HistoricEvents.plist; sourceTree = "<group>"; };
 		891385FB1F6576FC00A92E76 /* Timeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
+		891385FD1F65B17400A92E76 /* HicstoricEvents.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HicstoricEvents.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +108,7 @@
 				891385D21F649C0C00A92E76 /* Assets.xcassets */,
 				891385D41F649C0C00A92E76 /* LaunchScreen.storyboard */,
 				891385D71F649C0C00A92E76 /* Info.plist */,
-				891385F91F656D5600A92E76 /* HistoricEvents.plist */,
+				891385FD1F65B17400A92E76 /* HicstoricEvents.plist */,
 			);
 			path = boutTime;
 			sourceTree = "<group>";
@@ -238,10 +238,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				891385FA1F656D5600A92E76 /* HistoricEvents.plist in Resources */,
 				891385D61F649C0C00A92E76 /* LaunchScreen.storyboard in Resources */,
 				891385D31F649C0C00A92E76 /* Assets.xcassets in Resources */,
 				891385D11F649C0C00A92E76 /* Main.storyboard in Resources */,
+				891385FE1F65B17400A92E76 /* HicstoricEvents.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

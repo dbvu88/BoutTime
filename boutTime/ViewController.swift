@@ -14,30 +14,65 @@ class ViewController: UIViewController {
     @IBOutlet weak var eventSecond: UILabel!
     @IBOutlet weak var eventThird: UILabel!
     @IBOutlet weak var eventForth: UILabel!
+    
+    var events: [Event] = []
 
     @IBAction func swapFirstAndSecond() {
-        let temp: String = eventSecond.text!
-        eventSecond.text = eventFirst.text
-        eventFirst.text = temp
+        let tempEvent: Event = events[1]
+        events[1] = events[0]
+        events[0] = tempEvent
+        
+        eventFirst.text = events[0].description
+        eventSecond.text = events[1].description
+        
+        endRoundWithDelay(seconds: 35)
     }
    
     @IBAction func swapSecondAndThird() {
-        let temp: String = eventThird.text!
-        eventThird.text = eventSecond.text
-        eventSecond.text = temp
+        let tempEvent: Event = events[2]
+        events[2] = events[1]
+        events[1] = tempEvent
+        
+        eventSecond.text = events[1].description
+        eventThird.text = events[2].description
+        
+        endRoundWithDelay(seconds: 35)
     }
     
     @IBAction func swapThirdAndForth() {
-        let temp: String = eventForth.text!
-        eventForth.text = eventThird.text
-        eventThird.text = temp
+        let tempEvent: Event = events[3]
+        events[3] = events[2]
+        events[1] = tempEvent
+        
+        eventThird.text = events[2].description
+        eventForth.text = events[3].description
+        
+        endRoundWithDelay(seconds: 35)
+    }
+    
+    func endRoundWithDelay(seconds: Int) {
+        // Converts a delay in seconds to nanoseconds as signed 64 bit integer
+        let delay = Int64(NSEC_PER_SEC * UInt64(seconds))
+        // Calculates a time value to execute the method given current time and delay
+        let dispatchTime = DispatchTime.now() + Double(delay) / Double(NSEC_PER_SEC)
+        
+        // Executes the nextRound method at the dispatch time on the main queue
+        DispatchQueue.main.asyncAfter(deadline: dispatchTime) {
+//            self.nextRound()
+        }
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        events = GameController.newRound(events: historicEvents)
+        eventFirst.text = events[0].description
+        eventSecond.text = events[1].description
+        eventThird.text = events[2].description
+        eventForth.text = events[3].description
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -2,55 +2,57 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>New item</key>
+	<string></string>
 	<key>Lugi Galvani is able to show electricty activity in living tissue, including muscle and nerve.</key>
-	<integer>1971</integer>
+	<string></string>
 	<key>Nicolas Appert invents a vacuum bottling technique that helps supply food for French Troops.</key>
 	<integer>1809</integer>
 	<key>Refrigeration Starts to become popular in food processing.</key>
 	<integer>1892</integer>
 	<key>Jack Kilby and Robert Noyce develop the intergrated circuit paving the way for microprocessor technology.</key>
-	<integer>1958</integer>
+	<real>1958</real>
 	<key>Bob Kahn and Vint Cerf create the transmission control protocal (TCP) that controls how data moves around the internet.</key>
-	<integer>1973</integer>
+	<real>1973</real>
 	<key>Tim Bernes-Lee proposes a hypertext system that will run across the internet on different operating systems (WWW).</key>
-	<integer>1989</integer>
+	<real>1989</real>
 	<key>Karl Benz builds an automobile powered by his own four-stroke engine design.</key>
-	<integer>1885</integer>
+	<real>1885</real>
 	<key>Brothers Charles and Frank Duryea test the first-ever American gasoline-powered automobile.</key>
-	<integer>1893</integer>
+	<real>1893</real>
 	<key>Ford introduces airpags.</key>
 	<real>1974</real>
 	<key>Ford, Chrysler and GM offer seat belts as options.</key>
-	<integer>1956</integer>
+	<real>1956</real>
 	<key>Four-wheel brakes are introduced in Scotland.</key>
-	<integer>1909</integer>
+	<real>1909</real>
 	<key>Kane Kramer creates an MP3 Player called MPMan player.</key>
-	<integer>1997</integer>
+	<real>1997</real>
 	<key>Apple and Steve Jobs introduce iTunes and the iPod.</key>
-	<integer>2001</integer>
+	<real>2001</real>
 	<key>German researches begin work on a File Format for digitizing audio.</key>
-	<integer>1987</integer>
+	<real>1987</real>
 	<key>Sony introduces the first version of its iconic walkman personal music device.</key>
-	<integer>1979</integer>
+	<real>1979</real>
 	<key>Martin Cooper makes the first analog mobile phone call using a blocky handset.</key>
-	<integer>1973</integer>
+	<real>1973</real>
 	<key>AT&amp;T submits a concept for cellular communication to the federal communications commission.</key>
-	<integer>1971</integer>
+	<real>1971</real>
 	<key>The first person-to-person SMS is sent.</key>
-	<integer>1993</integer>
+	<real>1993</real>
 	<key>Apple releases the macintosh, the first successful mouse-driven user interface.</key>
-	<integer>1984</integer>
+	<real>1984</real>
 	<key>Atari introduces the 400 and 800 computers</key>
-	<integer>1979</integer>
+	<real>1979</real>
 	<key>Konrad Zuse creates the Z3, the first fully operational, programmable electro-machanical computer.</key>
-	<integer>1941</integer>
+	<real>1941</real>
 	<key>Louis Pasteur develops a method that dramatically improves the safety of food, allowing for longer preservation.</key>
-	<integer>1832</integer>
+	<real>1832</real>
 	<key>Peter Duran introduces the tin-plated can in the U.S.</key>
-	<integer>1818</integer>
+	<real>1818</real>
 	<key>John Deere invents the steel plough, allowing farmers to produce more crops.</key>
-	<integer>1832</integer>
+	<real>1832</real>
 	<key>The Boeing 707 offers a new level of comfort and safety.</key>
-	<integer>1957</integer>
+	<real>1957</real>
 </dict>
 </plist>

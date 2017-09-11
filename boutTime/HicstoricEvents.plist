@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>description</key>
+		<string>Lugi Galvani is able to show electricty activity in living tissue, including muscle and nerve.</string>
+		<key>year</key>
+		<integer>1780</integer>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Nicolas Appert invents a vacuum bottling technique that helps supply food for French Troops.</string>
+		<key>year</key>
+		<real>1809</real>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Refrigeration Starts to become popular in food processing.</string>
+		<key>year</key>
+		<real>1892</real>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Jack Kilby and Robert Noyce develop the intergrated circuit paving the way for microprocessor technology.</string>
+		<key>year</key>
+		<real>1958</real>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Bob Kahn and Vint Cerf create the transmission control protocal (TCP) that controls how data moves around the internet.</string>
+		<key>year</key>
+		<real>1973</real>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Tim Bernes-Lee proposes a hypertext system that will run across the internet on different operating systems (WWW).</string>
+		<key>year</key>
+		<real>1989</real>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Karl Benz builds an automobile powered by his own four-stroke engine design.</string>
+		<key>year</key>
+		<real>1885</real>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Brothers Charles and Frank Duryea test the first-ever American gasoline-powered automobile.</string>
+		<key>year</key>
+		<real>1893</real>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Ford introduces airpags.</string>
+		<key>year</key>
+		<real>1974</real>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Ford, Chrysler and GM offer seat belts as options.</string>
+		<key>year</key>
+		<real>1956</real>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Four-wheel brakes are introduced in Scotland.</string>
+		<key>year</key>
+		<real>1909</real>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Kane Kramer creates an MP3 Player called MPMan player.</string>
+		<key>year</key>
+		<real>1997</real>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Apple and Steve Jobs introduce iTunes and the iPod.</string>
+		<key>year</key>
+		<real>2001</real>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>German researches begin work on a File Format for digitizing audio.</string>
+		<key>year</key>
+		<real>1987</real>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Sony introduces the first version of its iconic walkman personal music device.</string>
+		<key>year</key>
+		<real>1979</real>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Martin Cooper makes the first analog mobile phone call using a blocky handset.</string>
+		<key>year</key>
+		<real>1973</real>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>AT&amp;T submits a concept for cellular communication to the federal communications commission.</string>
+		<key>year</key>
+		<real>1971</real>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The first person-to-person SMS is sent.</string>
+		<key>year</key>
+		<real>1993</real>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Apple releases the macintosh, the first successful mouse-driven user interface.</string>
+		<key>year</key>
+		<real>1984</real>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Atari introduces the 400 and 800 computers</string>
+		<key>year</key>
+		<real>1979</real>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Konrad Zuse creates the Z3, the first fully operational, programmable electro-machanical computer.</string>
+		<key>year</key>
+		<real>1941</real>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Louis Pasteur develops a method that dramatically improves the safety of food, allowing for longer preservation.</string>
+		<key>year</key>
+		<real>1832</real>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Peter Duran introduces the tin-plated can in the U.S.</string>
+		<key>year</key>
+		<real>1818</real>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>John Deere invents the steel plough, allowing farmers to produce more crops.</string>
+		<key>year</key>
+		<real>1832</real>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>The Boeing 707 offers a new level of comfort and safety.</string>
+		<key>year</key>
+		<integer>0</integer>
+	</dict>
+</array>
+</plist>
