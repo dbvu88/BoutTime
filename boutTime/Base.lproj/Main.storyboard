@@ -24,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Y2A-bI-QKi">
-                                <rect key="frame" x="32" y="28" width="311" height="556"/>
+                                <rect key="frame" x="32" y="20" width="311" height="556"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wjk-n3-grG">
                                         <rect key="frame" x="0.0" y="0.0" width="311" height="130"/>
@@ -35,7 +35,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aEw-Yy-SkG">
                                                         <rect key="frame" x="0.0" y="0.0" width="261" height="130"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1992" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="1" translatesAutoresizingMaskIntoConstraints="NO" id="GHv-lb-U41">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="1" translatesAutoresizingMaskIntoConstraints="NO" id="GHv-lb-U41">
                                                                 <rect key="frame" x="0.0" y="0.0" width="261" height="130"/>
                                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
@@ -55,21 +55,21 @@
                                                 <state key="normal" backgroundImage="down_full"/>
                                                 <state key="highlighted" backgroundImage="down_full_selected"/>
                                                 <connections>
-                                                    <action selector="swapFirstAndSecond" destination="BYZ-38-t0r" eventType="touchUpInside" id="OHf-pg-mLF"/>
+                                                    <action selector="swapEvents:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wte-UW-aW7"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="wjk-n3-grG" secondAttribute="height" multiplier="311:130" id="6Ba-WK-udo"/>
                                             <constraint firstItem="NdW-6l-c2m" firstAttribute="leading" secondItem="wjk-n3-grG" secondAttribute="leading" id="PJ7-9d-yR1"/>
-                                            <constraint firstAttribute="width" constant="300" id="brH-5w-K6F"/>
+                                            <constraint firstAttribute="width" constant="311" id="brH-5w-K6F"/>
                                             <constraint firstAttribute="height" constant="130" id="co6-Xc-3LQ"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zkp-AT-QRm">
                                         <rect key="frame" x="0.0" y="142" width="311" height="130"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Louis Pasteur develops a method that dramatically improves the safety of food, allowing for longer preservation." lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="1" translatesAutoresizingMaskIntoConstraints="NO" id="prw-hc-6xR">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="1" translatesAutoresizingMaskIntoConstraints="NO" id="prw-hc-6xR">
                                                 <rect key="frame" x="0.0" y="0.0" width="261" height="130"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
@@ -88,7 +88,7 @@
                                                         <state key="normal" backgroundImage="up_half"/>
                                                         <state key="highlighted" backgroundImage="up_half_selected"/>
                                                         <connections>
-                                                            <action selector="swapFirstAndSecond" destination="BYZ-38-t0r" eventType="touchUpInside" id="4lh-YH-eId"/>
+                                                            <action selector="swapEvents:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gGi-hh-uh4"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KD0-qa-4fT">
@@ -102,7 +102,7 @@
                                                         <state key="selected" backgroundImage="down_half_selected"/>
                                                         <state key="highlighted" backgroundImage="down_half_selected"/>
                                                         <connections>
-                                                            <action selector="swapSecondAndThird" destination="BYZ-38-t0r" eventType="touchUpInside" id="wEc-FH-fmM"/>
+                                                            <action selector="swapEvents:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YfU-yr-coy"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -118,13 +118,13 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Zkp-AT-QRm" secondAttribute="height" multiplier="311:130" id="MxX-m8-yUf"/>
                                             <constraint firstAttribute="height" constant="130" id="Wrv-ph-frH"/>
-                                            <constraint firstAttribute="width" constant="300" id="pwh-SF-yuo"/>
+                                            <constraint firstAttribute="width" constant="311" id="pwh-SF-yuo"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AEp-83-feS">
                                         <rect key="frame" x="0.0" y="284" width="311" height="130"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="1" translatesAutoresizingMaskIntoConstraints="NO" id="8mq-ME-afb">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="1" translatesAutoresizingMaskIntoConstraints="NO" id="8mq-ME-afb">
                                                 <rect key="frame" x="0.0" y="0.0" width="261" height="130"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
@@ -143,7 +143,7 @@
                                                         <state key="normal" backgroundImage="up_half"/>
                                                         <state key="highlighted" backgroundImage="up_half_selected"/>
                                                         <connections>
-                                                            <action selector="swapSecondAndThird" destination="BYZ-38-t0r" eventType="touchUpInside" id="I9N-X6-nKa"/>
+                                                            <action selector="swapEvents:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2ka-gf-z5c"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVg-cU-ulN">
@@ -156,7 +156,7 @@
                                                         <state key="normal" backgroundImage="down_half"/>
                                                         <state key="highlighted" backgroundImage="down_half_selected"/>
                                                         <connections>
-                                                            <action selector="swapThirdAndForth" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ukh-Mc-vYI"/>
+                                                            <action selector="swapEvents:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kFA-Hr-Zgd"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -171,14 +171,14 @@
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="AEp-83-feS" secondAttribute="height" multiplier="311:130" id="VXA-zs-nYT"/>
-                                            <constraint firstAttribute="width" constant="300" id="jgQ-6K-2aP"/>
+                                            <constraint firstAttribute="width" constant="311" id="jgQ-6K-2aP"/>
                                             <constraint firstAttribute="height" constant="130" id="rzW-XV-Ng7"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b4C-kL-71d">
                                         <rect key="frame" x="0.0" y="426" width="311" height="130"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="1" translatesAutoresizingMaskIntoConstraints="NO" id="APU-Js-98b">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="1" translatesAutoresizingMaskIntoConstraints="NO" id="APU-Js-98b">
                                                 <rect key="frame" x="0.0" y="0.0" width="261" height="130"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
@@ -194,33 +194,58 @@
                                                 <state key="normal" backgroundImage="up_full"/>
                                                 <state key="highlighted" backgroundImage="up_full_selected"/>
                                                 <connections>
-                                                    <action selector="swapThirdAndForth" destination="BYZ-38-t0r" eventType="touchUpInside" id="avR-4N-K21"/>
+                                                    <action selector="swapEvents:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f9t-R3-b8g"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="b4C-kL-71d" secondAttribute="height" multiplier="311:130" id="Bmc-BX-qAE"/>
-                                            <constraint firstAttribute="width" constant="300" id="R8X-5o-idY"/>
+                                            <constraint firstAttribute="width" constant="311" id="R8X-5o-idY"/>
                                             <constraint firstAttribute="height" constant="130" id="lxO-o6-u7M"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="5uw-72-eP3"/>
+                                    <constraint firstAttribute="width" constant="311" id="5uw-72-eP3"/>
                                     <constraint firstItem="Zkp-AT-QRm" firstAttribute="width" secondItem="wjk-n3-grG" secondAttribute="width" id="DeO-Nh-tju"/>
                                     <constraint firstItem="AEp-83-feS" firstAttribute="height" secondItem="wjk-n3-grG" secondAttribute="height" id="Lm0-8p-kdS"/>
                                     <constraint firstItem="b4C-kL-71d" firstAttribute="width" secondItem="wjk-n3-grG" secondAttribute="width" id="V13-hp-NXd"/>
                                     <constraint firstItem="b4C-kL-71d" firstAttribute="height" secondItem="wjk-n3-grG" secondAttribute="height" id="dS1-EG-PJD"/>
                                     <constraint firstAttribute="width" secondItem="Y2A-bI-QKi" secondAttribute="height" multiplier="311:556" id="f1r-BI-QHV"/>
                                     <constraint firstItem="AEp-83-feS" firstAttribute="width" secondItem="wjk-n3-grG" secondAttribute="width" id="jc0-Rg-F0t"/>
+                                    <constraint firstAttribute="width" secondItem="Y2A-bI-QKi" secondAttribute="height" multiplier="311:556" id="jn4-aR-ccQ"/>
                                     <constraint firstItem="Zkp-AT-QRm" firstAttribute="height" secondItem="wjk-n3-grG" secondAttribute="height" id="swN-2X-I5P"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:35" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="U1r-ET-6nr">
+                                <rect key="frame" x="134" y="584" width="107" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="U1r-ET-6nr" secondAttribute="height" multiplier="96:55" constant="35.436363636363637" id="Xdl-lc-6ar"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" red="0.98441702127456665" green="0.98107784986495972" blue="0.94344550371170044" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake to Complete" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FkH-jf-8B1">
+                                <rect key="frame" x="101" y="633" width="173" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="FkH-jf-8B1" secondAttribute="height" multiplier="173:26" id="cOb-DR-qqT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.16172695159912109" blue="0.29461014270782471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="FkH-jf-8B1" firstAttribute="top" secondItem="U1r-ET-6nr" secondAttribute="bottom" constant="8" id="3Ud-L2-gcP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FkH-jf-8B1" secondAttribute="bottom" constant="8" id="3rv-hn-Lp7"/>
                             <constraint firstItem="Y2A-bI-QKi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="6ce-8i-r2R"/>
-                            <constraint firstItem="Y2A-bI-QKi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="IwY-Qb-QQX"/>
+                            <constraint firstItem="FkH-jf-8B1" firstAttribute="centerX" secondItem="U1r-ET-6nr" secondAttribute="centerX" id="6wz-xO-mNy"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="U1r-ET-6nr" secondAttribute="bottom" constant="42" id="BQt-3f-OCg"/>
+                            <constraint firstItem="U1r-ET-6nr" firstAttribute="top" secondItem="APU-Js-98b" secondAttribute="bottom" constant="8" id="CZx-sS-waa"/>
+                            <constraint firstItem="U1r-ET-6nr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DTJ-vN-aXf"/>
+                            <constraint firstItem="Y2A-bI-QKi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="IwY-Qb-QQX"/>
                             <constraint firstItem="Y2A-bI-QKi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mz6-y3-7if"/>
                         </constraints>
                     </view>
@@ -229,11 +254,18 @@
                         <outlet property="eventForth" destination="APU-Js-98b" id="TDp-jt-z5b"/>
                         <outlet property="eventSecond" destination="prw-hc-6xR" id="fPx-hE-Ra7"/>
                         <outlet property="eventThird" destination="8mq-ME-afb" id="lwB-1c-sgq"/>
+                        <outlet property="fullDown" destination="kbl-Kg-BCN" id="MG3-zz-Ebp"/>
+                        <outlet property="fullUp" destination="gdi-GF-1tl" id="IhZ-QM-8e7"/>
+                        <outlet property="halfDownFirst" destination="KD0-qa-4fT" id="BDU-8d-NhE"/>
+                        <outlet property="halfDownSecond" destination="bVg-cU-ulN" id="o3C-JG-5VQ"/>
+                        <outlet property="halfUpFirst" destination="rzn-rR-82L" id="Pcp-Vo-66s"/>
+                        <outlet property="halfUpSecond" destination="reb-r3-HiL" id="dqM-Nc-n03"/>
+                        <outlet property="timer" destination="U1r-ET-6nr" id="xRZ-Ua-Pcc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-217" y="-44"/>
+            <point key="canvasLocation" x="-218.40000000000001" y="-44.527736131934034"/>
         </scene>
     </scenes>
     <resources>

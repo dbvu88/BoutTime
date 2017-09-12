@@ -44,16 +44,35 @@ let historicEvents:[Event] = [
     Event(description: "John Deere invents the steel plough, allowing farmers to produce more crops.", year: 1832),
     Event(description: "The Boeing 707 offers a new level of comfort and safety.", year: 1958)]
 
-struct GameController {
-    static func newRound(events: [Event]) -> [Event] {
-        var selectedEvents: [Event] = []
+class eventsController {
+    var selectedEvents: [Event]
+    
+    init(events: [Event]) {
+        selectedEvents = []
         var availableEvents: [Event] = events
         while selectedEvents.count < 4 {
             let index:Int = GKRandomSource.sharedRandom().nextInt(upperBound: availableEvents.count)
             selectedEvents.append(availableEvents[index])
             availableEvents.remove(at: index)
         }
-        return selectedEvents
+    }
+    
+    func eventSwapper(firstPosition: Int, secondPosition: Int){
+        let tempEvent: Event = selectedEvents[secondPosition]
+        selectedEvents[secondPosition] = selectedEvents[firstPosition]
+        selectedEvents[firstPosition] = tempEvent
+    }
+    
+    func eventDescription(at index: Int) -> String {
+        return selectedEvents[index].description
+    }
+    
+    func isOrdered() -> Bool {
+        let result: Bool = (
+            selectedEvents[0].year < selectedEvents[1].year &&
+            selectedEvents[1].year < selectedEvents[2].year &&
+            selectedEvents[2].year < selectedEvents[3].year)
+        return result
     }
 }
 
