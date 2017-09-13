@@ -16,6 +16,7 @@
 		891385EC1F649C0C00A92E76 /* boutTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891385EB1F649C0C00A92E76 /* boutTimeUITests.swift */; };
 		891385FC1F6576FC00A92E76 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891385FB1F6576FC00A92E76 /* Timeline.swift */; };
 		891385FE1F65B17400A92E76 /* HicstoricEvents.plist in Resources */ = {isa = PBXBuildFile; fileRef = 891385FD1F65B17400A92E76 /* HicstoricEvents.plist */; };
+		891386001F69575500A92E76 /* EndGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891385FF1F69575500A92E76 /* EndGameController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		891385ED1F649C0C00A92E76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		891385FB1F6576FC00A92E76 /* Timeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
 		891385FD1F65B17400A92E76 /* HicstoricEvents.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HicstoricEvents.plist; sourceTree = "<group>"; };
+		891385FF1F69575500A92E76 /* EndGameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndGameController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				891385CB1F649C0C00A92E76 /* AppDelegate.swift */,
 				891385CD1F649C0C00A92E76 /* ViewController.swift */,
 				891385FB1F6576FC00A92E76 /* Timeline.swift */,
+				891385FF1F69575500A92E76 /* EndGameController.swift */,
 				891385CF1F649C0C00A92E76 /* Main.storyboard */,
 				891385D21F649C0C00A92E76 /* Assets.xcassets */,
 				891385D41F649C0C00A92E76 /* LaunchScreen.storyboard */,
@@ -269,6 +272,7 @@
 				891385FC1F6576FC00A92E76 /* Timeline.swift in Sources */,
 				891385CE1F649C0C00A92E76 /* ViewController.swift in Sources */,
 				891385CC1F649C0C00A92E76 /* AppDelegate.swift in Sources */,
+				891386001F69575500A92E76 /* EndGameController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +517,7 @@
 				891385F21F649C0C00A92E76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		891385F31F649C0C00A92E76 /* Build configuration list for PBXNativeTarget "boutTimeTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +526,7 @@
 				891385F51F649C0C00A92E76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		891385F61F649C0C00A92E76 /* Build configuration list for PBXNativeTarget "boutTimeUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +535,7 @@
 				891385F81F649C0C00A92E76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

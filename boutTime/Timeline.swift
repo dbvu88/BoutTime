@@ -67,7 +67,7 @@ class eventsController {
         return selectedEvents[index].description
     }
     
-    func isOrdered() -> Bool {
+    func isInAscendingOrder() -> Bool {
         let result: Bool = (
             selectedEvents[0].year < selectedEvents[1].year &&
             selectedEvents[1].year < selectedEvents[2].year &&
@@ -75,4 +75,5 @@ class eventsController {
         return result
     }
 }
+
 

@@ -11,9 +11,18 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var events: eventsController = eventsController(events: historicEvents)
+    let rounds: [eventsController] = [
+        eventsController(events: historicEvents),
+        eventsController(events: historicEvents),
+        eventsController(events: historicEvents),
+        eventsController(events: historicEvents),
+        eventsController(events: historicEvents),
+        eventsController(events: historicEvents)
+    ]
+    var currentRound: Int = 0
+    var score: Int = 0
     var countdownTimer: Timer!
-    var totalTime = 35
+    var totalTime = 0
 
     @IBOutlet weak var eventFirst: UILabel!
     @IBOutlet weak var eventSecond: UILabel!
@@ -21,6 +30,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var eventForth: UILabel!
     @IBOutlet weak var timer: UILabel!
     
+    @IBOutlet weak var correctAnswer: UIImageView!
+    @IBOutlet weak var wrongAnswer: UIImageView!
+    
+    @IBOutlet weak var shakeToCompleteLabel: UILabel!
     
     @IBOutlet weak var fullDown: UIButton!
     @IBOutlet weak var halfUpFirst: UIButton!
@@ -31,18 +44,18 @@ class ViewController: UIViewController {
     
     @IBAction func swapEvents(_ sender: UIButton) {
         if (sender == fullDown || sender == halfUpFirst) {
-            events.eventSwapper(firstPosition: 0, secondPosition: 1)
-            displayLabel(firstEvent: events.eventDescription(at: 0), secondEvent: events.eventDescription(at: 1) )
+            rounds[currentRound].eventSwapper(firstPosition: 0, secondPosition: 1)
+            displayLabel(firstEvent: rounds[currentRound].eventDescription(at: 0), secondEvent: rounds[currentRound].eventDescription(at: 1))
         }
         
         if (sender == halfDownFirst || sender == halfUpSecond) {
-            events.eventSwapper(firstPosition: 1, secondPosition: 2)
-            displayLabel(secondEvent: events.eventDescription(at: 1), thirdEvent: events.eventDescription(at: 2) )
+            rounds[currentRound].eventSwapper(firstPosition: 1, secondPosition: 2)
+            displayLabel(secondEvent: rounds[currentRound].eventDescription(at: 1), thirdEvent: rounds[currentRound].eventDescription(at: 2))
         }
         
         if (sender == halfDownSecond || sender == fullUp) {
-            events.eventSwapper(firstPosition: 2, secondPosition: 3)
-            displayLabel(thirdEvent: events.eventDescription(at: 2), forthEvent: events.eventDescription(at: 3) )
+            rounds[currentRound].eventSwapper(firstPosition: 2, secondPosition: 3)
+            displayLabel(thirdEvent: rounds[currentRound].eventDescription(at: 2), forthEvent: rounds[currentRound].eventDescription(at: 3) )
         }
     }
     
@@ -90,17 +103,62 @@ class ViewController: UIViewController {
     }
     
     func checkAnswer() {
-        timer.text = "\(events.isOrdered())"
+        shakeToCompleteLabel.isHidden = true
+        timer.isHidden = true
+        if rounds[currentRound].isInAscendingOrder() {
+            correctAnswer.isHidden = false
+            score += 1
+        } else {
+            wrongAnswer.isHidden = false
+        }
+        currentRound += 1
+        if currentRound < 6{
+            loadNextRoundWithDelay(seconds: 2)
+        } else {
+            endGame()
+        }
+    }
+    func endGame() {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let endGameController = storyBoard.instantiateViewController(withIdentifier: "endGame")
+        
+        present(endGameController, animated: true, completion: nil)
+        
     }
     
+    func loadNextRoundWithDelay(seconds: Int) {
+        // Converts a delay in seconds to nanoseconds as signed 64 bit integer
+        let delay = Int64(NSEC_PER_SEC * UInt64(seconds))
+        // Calculates a time value to execute the method given current time and delay
+        let dispatchTime = DispatchTime.now() + Double(delay) / Double(NSEC_PER_SEC)
+        
+        // Executes the nextRound method at the dispatch time on the main queue
+        DispatchQueue.main.asyncAfter(deadline: dispatchTime) {
+            self.newRound(events: self.rounds[self.currentRound])
+        }
+    }
+    
+    func newRound(events: eventsController){
+        
+        
+        shakeToCompleteLabel.isHidden = false
+        correctAnswer.isHidden = true
+        wrongAnswer.isHidden = true
+        timer.isHidden = false
+        
+        displayLabel(firstEvent: events.eventDescription(at: 0), secondEvent: events.eventDescription(at: 1), thirdEvent: events.eventDescription(at: 2), forthEvent: events.eventDescription(at: 3) )
+        totalTime = 60
+        startTimer()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        displayLabel(firstEvent: events.eventDescription(at: 0), secondEvent: events.eventDescription(at: 1), thirdEvent: events.eventDescription(at: 2), forthEvent: events.eventDescription(at: 3) )
-        
-        startTimer()
+        newRound(events: rounds[currentRound])
+    }
+    
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        totalTime = 0
     }
     
 
