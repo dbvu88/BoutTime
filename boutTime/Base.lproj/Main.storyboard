@@ -14,7 +14,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="boutTime" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="main" id="BYZ-38-t0r" customClass="ViewController" customModule="boutTime" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -319,8 +319,11 @@
                                     <constraint firstAttribute="width" secondItem="iV4-SQ-Ryh" secondAttribute="height" multiplier="136:41" id="Z5c-Aw-nR0"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="play_again"/>
+                                <connections>
+                                    <action selector="newGame" destination="945-UO-Igs" eventType="touchUpInside" id="7Cl-es-efQ"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAT-wb-2N0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAT-wb-2N0">
                                 <rect key="frame" x="91" y="257" width="193" height="105"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="EAT-wb-2N0" secondAttribute="height" multiplier="9:8" constant="74.875" id="zAB-5g-zlk"/>
@@ -345,6 +348,9 @@
                             <constraint firstItem="EAT-wb-2N0" firstAttribute="top" secondItem="Cu4-PK-I2a" secondAttribute="bottom" constant="28" id="voe-HR-y2E"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scoreBoard" destination="EAT-wb-2N0" id="Nt2-om-0aB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kPZ-HT-jNw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

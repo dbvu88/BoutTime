@@ -16,6 +16,76 @@ class Event {
         self.year = year
     }
 }
+//
+//struct ScoreTracker {
+//    static var score: Int = 0
+//    
+//    static func addScore(){
+//        self.score += 1;
+//    }
+//    
+//    static func resetScore(){
+//        self.score = 0;
+//    }
+//}
+struct ScoreTracker {
+    static var score: Int = 0
+    
+    static func addScore(){
+        self.score += 1
+    }
+    static func resetScore(){
+        score = 0
+    }
+    
+}
+
+class GameController {
+    let rounds: [eventsController]
+    var score: Int
+    var currentRound: Int
+    
+    init() {
+        rounds = [
+        eventsController(events: historicEvents),
+        eventsController(events: historicEvents),
+        eventsController(events: historicEvents),
+        eventsController(events: historicEvents),
+        eventsController(events: historicEvents),
+        eventsController(events: historicEvents)
+        ]
+        self.score = 0
+        ScoreTracker.resetScore()
+        self.currentRound = 0
+    }
+    
+    func swapEvents(place:Int){
+        rounds[currentRound].eventSwapper(firstPosition: place, secondPosition: place + 1)
+    }
+    
+    func displayEventDesc(index: Int) -> String{
+        return rounds[currentRound].eventDescription(at: index)
+    }
+    
+    func getScore() -> Bool {
+        let isCorrect: Bool = rounds[currentRound].isInAscendingOrder()
+        currentRound += 1
+        
+        if isCorrect {
+            score += 1
+            ScoreTracker.addScore()
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    func currentEvents() -> eventsController {
+        return rounds[currentRound]
+    }
+    
+    
+}
 
 let historicEvents:[Event] = [
     Event(description: "Lugi Galvani is able to show electricty activity in living tissue, including muscle and nerve.", year: 1780),
